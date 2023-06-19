@@ -18,6 +18,7 @@ function adicionar() {
             soma = Number(soma) + Number(numero.value)
         }
     }
+    return;
 }
 
 
@@ -33,9 +34,14 @@ function finalizar() {
     let media = soma/total.toFixed(2)
     let pMedia = document.getElementById('p-media')
 
-    pTotal.innerHTML = `Ao todo, temos ${total} números cadastrados.`
-    pMaior.innerHTML = `O maior valor informado foi ${maior}.`
-    pMenor.innerHTML = `O menor valor informado foi ${menor}.`
-    pSoma.innerHTML = `Somando todos os valores, temos ${soma}.`
-    pMedia.innerHTML = `A média dos valores digitados é ${media}.`
+    if (select.length == 0) {
+        alert ('Adicione um número')
+    } else {
+        pTotal.innerHTML = `Ao todo, temos ${total} números cadastrados.`
+        pMaior.innerHTML = `O maior valor informado foi ${maior}.`
+        pMenor.innerHTML = `O menor valor informado foi ${menor}.`
+        pSoma.innerHTML = `Somando todos os valores, temos ${soma}.`
+        pMedia.innerHTML = `A média dos valores digitados é ${media}.`
+    }
+    return;
 }
