@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Projeto com vetores</title>
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <main>
+        <section id="conteudo">
+            <label for="numero">Número (entre 1 e 100): </label>
+            <input type="number" id="numero">
+            <button type="submit" onclick="adicionar()">Adicionar</button><br>
+
+            <select name="lista" id="lista" size="6">
+            </select><br>
+            
+            <button type="submit" onclick="finalizar()">Finalizar</button>
+            <div id="resultado">
+                <p class="p-resultado" id="p-total"></p>
+                <p class="p-resultado" id="p-maior"></p>
+                <p class="p-resultado" id="p-menor"></p>
+                <p class="p-resultado" id="p-soma"></p>
+                <p class="p-resultado" id="p-media"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; EnzoRomeiro
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
