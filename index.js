@@ -18,6 +18,8 @@ function adicionar() {
             soma = Number(soma) + Number(numero.value)
         }
     }
+    numero.value = ''
+    numero.focus()
     return;
 }
 
